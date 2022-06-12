@@ -4,7 +4,7 @@ Swipe button for Kotlin Android with a loading dots bounce progress bar for asyn
 # Gradle
 ```
 dependencies {
-	        implementation 'com.github.Developer-Kimaiyo:Swipe-Animated-Button:0.1.0'
+	        implementation 'com.github.maxwell-kimaiyo:Swipe-Animated-Button:0.1.0'
 	}
 ```
 
