@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relativeLayout_swipeBtn_contentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_swipeBtn_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout_swipeBtn_hintContainer"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="visible"
+            tools:text="Button" />
+
+        <TextView
+            android:id="@+id/tv_btnInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="Swipe The Button" />
+
+
+        <com.maxwell.swipeanimatedbutton.LoadingDotsBounce
+            android:id="@+id/swipe_loading"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_swipeBtn_hintContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:id="@+id/iv_arrow1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/ic_swipe_right_caret" />
+
+        <ImageView
+            android:id="@+id/iv_arrow2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/ic_swipe_right_caret" />
+
+        <ImageView
+            android:id="@+id/iv_arrow3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/ic_swipe_right_caret" />
+
+    </LinearLayout>
+
+</RelativeLayout>
