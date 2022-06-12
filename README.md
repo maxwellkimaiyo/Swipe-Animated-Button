@@ -1,4 +1,4 @@
-# AnimatedSwipeButton
+# Animated Swipe Button
 Animated swipe button for Kotlin Android with a loading dots bounce progress bar for async operations
 
 # Gradle
