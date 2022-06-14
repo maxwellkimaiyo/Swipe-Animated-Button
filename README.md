@@ -20,8 +20,9 @@ dependencies {
 2. React to successful swipe on the button by adding a swipe listener
 ```kotlin
         binding?.swipeBtn?.setTextSize(60)
-        binding?.swipeBtn?.setText("Continue")
-        binding?.swipeBtn?.setInstText("Swipe The Button")
+        binding?.swipeBtn?.setText(context.getString(R.string.txt_continue))
+        binding?.swipeBtn?.setInstText(context.getString(R.string.txt_swipe_the_btn))
+        binding?.swipeBtn?.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary))
         binding?.swipeBtn?.setOnSwipeListener(object : SwipeButton.OnSwipeListener {
         override fun onSwipeConfirm() {
            binding?.swipeBtn?.showResultIcon(isSuccess = true, shouldReset = true)
